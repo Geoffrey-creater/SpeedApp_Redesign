@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/rootFrame"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/appBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:textColor="@color/AppTextAndFields"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/montserrat"
+            android:text="@string/start_mobile_banking_with_umb"
+            android:textSize="20sp" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_marginLeft="20dp"
+            android:id="@+id/usernameInput"
+            android:hint="@string/username"
+            android:textColorHint="@color/AppTextAndFields"
+            android:drawablePadding="15dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textPersonName"
+            android:singleLine="true"
+            android:fontFamily="@font/montserrat"
+            android:drawableTint="@color/AppTextAndFields"
+            android:drawableStart="@drawable/ic_account_circle_24px"
+            android:layout_marginRight="20dp"
+            android:theme="@style/EditText.Yellow"
+            android:layout_height="60dp"
+            tools:targetApi="m" />
+
+    </LinearLayout>
+
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/usernameFab"
+            android:layout_margin="20dp"
+            android:layout_gravity="bottom|end"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            app:backgroundTint="@color/AppTextAndFields" />
+
+
+
+
+
+
+</FrameLayout>

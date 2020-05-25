@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    tools:context=".authUI.ForgotPasswordFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Forgot Password"
+        android:textColor="@color/AppTextAndFields"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="10dp"
+        android:src="@drawable/ic_email_checked"
+        android:tint="@color/AppTextAndFields"
+        tools:ignore="ContentDescription" />
+
+
+    <TextView
+        android:id="@+id/almostdone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:fontFamily="@font/montserrat"
+        android:text="Almost done!"
+        android:textColor="@color/AppTextAndFields"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/almostdone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/rubik"
+        android:text="We've sent you an email with a link to reset\n your password."
+        android:textAlignment="center"
+        android:textColor="@color/AppTextAndFields"
+        android:textSize="17sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="300dp"
+        app:cornerRadius="20dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:backgroundTint="@color/AppTextAndFields"
+        android:fontFamily="@font/rubik"
+        android:text="Check Email"
+        android:textAllCaps="false" />
+
+
+</RelativeLayout>

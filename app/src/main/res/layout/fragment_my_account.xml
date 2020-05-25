@@ -1,0 +1,397 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/appBackground"
+    android:orientation="vertical"
+    tools:context=".ui.MyAccountFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        app:cardElevation="0dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/appBackground"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_moneyt"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_account_circle_24px"
+                android:tint="@color/AppTextAndFields"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/dividert"
+                android:layout_width="1.2dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/icon_moneyt"
+                android:background="@color/AppTextAndFields" />
+
+            <View
+                android:id="@+id/dividert1"
+                android:layout_width="1.2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@color/AppTextAndFields" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/dividert"
+                android:fontFamily="@font/rubik"
+                android:text="My Account"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/AppTextAndFields"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:visibility="visible"
+        app:cardBackgroundColor="@color/AppTextAndFields"
+        app:cardCornerRadius="6dp"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:scaleType="centerCrop"
+                android:src="@drawable/world_map" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp">
+
+                <ImageView
+                    android:id="@+id/card_logo"
+                    android:layout_width="50dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="end|right"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/ic_visa_new"
+                    android:tint="@android:color/white" />
+
+                <TextView
+                    android:id="@+id/card_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:fontFamily="monospace"
+                    android:text="**** **** **** 4996"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Headline"
+                    android:textColor="@android:color/white" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="EXPIRE"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                                    android:textColor="@color/grey_10" />
+
+                                <TextView
+                                    android:id="@+id/card_expire"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="monospace"
+                                    android:text="01/23"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@android:color/white" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:layout_width="35dp"
+                                android:layout_height="0dp" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/cvv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/montserrat"
+                                    android:text="CVV"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1"
+                                    android:textColor="@color/grey_10" />
+
+                                <TextView
+                                    android:id="@+id/card_cvv"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="monospace"
+                                    android:text="***"
+                                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                                    android:textColor="@android:color/white" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="15dp" />
+
+                        <TextView
+                            android:id="@+id/card_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/rubik"
+                            android:text="AMOAKO MICHAEL"
+                            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                            android:textColor="@android:color/white" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_gravity="bottom"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/ic_copper_card" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="5dp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/AppTextAndFields"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_money"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_attach_money_24px"
+                android:tint="@android:color/black"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="1.2dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/icon_money"
+                android:background="@color/grey_90" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/divider"
+                android:fontFamily="@font/rubik"
+                android:text="@string/check_balance"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:tint="@android:color/black"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/AppTextAndFields"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_money1"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_description_24px"
+                android:tint="@android:color/black"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="1.2dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/icon_money1"
+                android:background="@color/grey_90" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/divider1"
+                android:fontFamily="@font/rubik"
+                android:text="@string/mini_statement_all_transactions"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:tint="@android:color/black"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        app:cardBackgroundColor="@color/AppTextAndFields"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_money2"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_phone_iphone_24px"
+                android:tint="@android:color/black"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="1.2dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/icon_money2"
+                android:background="@color/grey_90" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@+id/divider2"
+                android:fontFamily="@font/rubik"
+                android:text="Mini Statement - Mobile \nTransactions"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:tint="@android:color/black"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

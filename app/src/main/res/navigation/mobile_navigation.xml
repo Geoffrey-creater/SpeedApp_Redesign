@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/MyAccountFragment">
+
+
+    <fragment
+        android:id="@+id/MyAccountFragment"
+        android:name="com.example.umbspeedapp.ui.MyAccountFragment"
+        android:label="fragment_MyAccount"
+        tools:layout="@layout/fragment_my_account" >
+        <action
+            android:id="@+id/action_MyAccountFragment_to_loanFragment"
+            app:destination="@id/loanFragment" />
+        <action
+            android:id="@+id/action_MyAccountFragment_to_myProfileFragment2"
+            app:destination="@id/myProfileFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/loanFragment"
+        android:name="com.example.umbspeedapp.ui.LoanFragment"
+        android:label="fragment_loan"
+        tools:layout="@layout/fragment_loan" >
+        <action
+            android:id="@+id/action_loanFragment_to_investmentFragment"
+            app:destination="@id/investmentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/investmentFragment"
+        android:name="com.example.umbspeedapp.ui.InvestmentFragment"
+        android:label="fragment_investment"
+        tools:layout="@layout/fragment_investment" >
+        <action
+            android:id="@+id/action_investmentFragment_to_cardsFragment"
+            app:destination="@id/cardsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cardsFragment"
+        android:name="com.example.umbspeedapp.ui.CardsFragment"
+        android:label="fragment_cards"
+        tools:layout="@layout/fragment_cards" >
+        <action
+            android:id="@+id/action_cardsFragment_to_fundsTransferFragment"
+            app:destination="@id/fundsTransferFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/fundsTransferFragment"
+        android:name="com.example.umbspeedapp.ui.FundsTransferFragment"
+        android:label="fragment_funds_transfer"
+        tools:layout="@layout/fragment_funds_transfer" >
+        <action
+            android:id="@+id/action_fundsTransferFragment_to_requestFragment"
+            app:destination="@id/requestFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/requestFragment"
+        android:name="com.example.umbspeedapp.ui.RequestFragment"
+        android:label="fragment_request"
+        tools:layout="@layout/fragment_request" >
+        <action
+            android:id="@+id/action_requestFragment_to_standingOrderFragment"
+            app:destination="@id/standingOrderFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/standingOrderFragment"
+        android:name="com.example.umbspeedapp.ui.StandingOrderFragment"
+        android:label="fragment_standing_order"
+        tools:layout="@layout/fragment_standing_order" >
+        <action
+            android:id="@+id/action_standingOrderFragment_to_forexFragment"
+            app:destination="@id/forexFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/forexFragment"
+        android:name="com.example.umbspeedapp.ui.ForexFragment"
+        android:label="fragment_forex"
+        tools:layout="@layout/fragment_forex" >
+        <action
+            android:id="@+id/action_forexFragment_to_myProfileFragment"
+            app:destination="@id/BankAssuranceFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/BankAssuranceFragment"
+        android:name="com.example.umbspeedapp.ui.BankAssuranceFragment"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_bank_assurance" >
+        <action
+            android:id="@+id/action_myProfileFragment_to_billPaymentFragment"
+            app:destination="@id/billPaymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myProfileFragment2"
+        android:name="com.example.umbspeedapp.ui.MyProfileFragment"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_m_profile" />
+    <fragment
+        android:id="@+id/billPaymentFragment"
+        android:name="com.example.umbspeedapp.Bill_PaymentFragment"
+        android:label="fragment_bill_payment"
+        tools:layout="@layout/fragment_bill_payment" />
+</navigation>

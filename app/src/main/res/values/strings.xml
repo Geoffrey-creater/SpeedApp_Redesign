@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">umb SpeedApp</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="umb">umb</string>
+    <string name="start_mobile_banking_with_umb">Start mobile banking with umb</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="loan">Loan</string>
+    <string name="investment">Investment</string>
+    <string name="cards">Cards</string>
+    <string name="fund_transfer">Fund transfer</string>
+    <string name="request">Request</string>
+    <string name="forex_rate">Forex Rate</string>
+    <string name="standing_order">Standing Order</string>
+    <string name="bank_assurance">Bank Assurance</string>
+    <string name="bill_payment">Bill Payment</string>
+    <string name="my_profile">My Profile</string>
+    <string name="mail">amoako.michael@umb.com</string>
+
+    <string name="amoako_michael">AMOAKO MICHAEL</string>
+    <string name="check_balance">Check Balance</string>
+    <string name="mini_statement_all_transactions">Mini Statement - All Transactions</string>
+    <string name="check_loan_account_balance">Check Loan Account Balance</string>
+    <string name="loan_request">Loan Request</string>
+    <string name="standing_order_delete">Standing Order - Delete</string>
+    <string name="forgot_password">Forgot Password?</string>
+
+
+    <string name="menu_loans">Loans</string>
+    <string name="menu_investment">Investment</string>
+    <string name="menu_cards">Cards</string>
+    <string name="menu_request">Request</string>
+    <string name="menu_standing_order">Standing Order</string>
+    <string name="menu_forex_rate">Forex Rate</string>
+    <string name="menu_my_profile">My Profile</string>
+    <string name="menu_bank_assurance">Bank Assurance</string>
+    <string name="menu_bill_payment">Bill Payment</string>
+    <string name="menu_login">Login</string>
+    <string name="menu_self_register">Self-Register</string>
+    <string name="menu_products">Products</string>
+    <string name="menu_contact_us">Contact Us</string>
+    <string name="operations">Operations</string>
+    <string name="profile">Profile</string>
+    <string name="menu_locate_us">Locate Us</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

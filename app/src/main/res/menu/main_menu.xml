@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<group android:checkableBehavior="single">
+
+    <item
+        android:id="@+id/nav_loans"
+        android:icon="@drawable/ic_description_24px"
+        android:title="@string/menu_loans"/>
+    <item
+        android:id="@+id/nav_investment"
+        android:icon="@drawable/ic_investment"
+        android:title="@string/menu_investment"/>
+    <item
+        android:id="@+id/nav_cards"
+        android:icon="@drawable/ic_cards"
+        android:title="@string/menu_cards"/>
+    <item
+        android:id="@+id/nav_request"
+        android:icon="@drawable/ic_invest_request"
+        android:title="@string/menu_request"/>
+    <item
+        android:id="@+id/nav_standing_order"
+        android:icon="@drawable/ic_standing_order"
+        android:title="@string/menu_standing_order"/>
+    <item
+        android:id="@+id/nav_forex_rate"
+        android:icon="@drawable/ic_forex_rate"
+        android:title="@string/menu_forex_rate"/>
+    <item
+        android:id="@+id/myProfile"
+        android:icon="@drawable/ic_profile"
+        android:title="@string/my_profile"/>
+    <item
+        android:id="@+id/nav_BankAssurance"
+        android:icon="@drawable/ic_asurance"
+        android:title="@string/menu_bank_assurance"/>
+<item
+        android:id="@+id/nav_BillPayment"
+        android:icon="@drawable/ic_bill"
+        android:title="@string/bill_payment"/>
+
+</group>
+
+
+
+    <item android:title="@string/profile">
+        <menu>
+            <group>
+                <item
+                    android:id="@+id/nav_Login"
+                    android:title="@string/menu_login"
+                    android:icon="@drawable/ic_account_circle_24px"/>
+
+                  <item
+                    android:id="@+id/nav_SelfRegister"
+                    android:title="@string/menu_self_register"
+                    android:icon="@drawable/ic_register"/>
+                <item
+                    android:id="@+id/nav_product"
+                    android:title="@string/menu_products"
+                    android:icon="@drawable/ic_product"/>
+                <item
+                    android:id="@+id/nav_LocateUs"
+                    android:title="@string/menu_locate_us"
+                    android:icon="@drawable/ic_locate"/>
+
+                <item
+                    android:id="@+id/nav_ContactUs"
+                    android:title="@string/menu_contact_us"
+                    android:icon="@drawable/ic_contact"/>
+
+
+            </group>
+        </menu>
+
+
+    </item>
+
+
+</menu>

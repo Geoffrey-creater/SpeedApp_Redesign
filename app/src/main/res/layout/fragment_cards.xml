@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/appBackground"
+    tools:context=".ui.MyAccountFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/appBackground"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_moneyt"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_cards"
+                android:tint="@color/AppTextAndFields"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/dividert"
+                android:layout_width="1.2dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/icon_moneyt"
+                android:background="@color/AppTextAndFields" />
+
+            <View
+                android:id="@+id/dividert1"
+                android:layout_width="1.2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@color/AppTextAndFields" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/dividert"
+                android:fontFamily="@font/rubik"
+                android:text="My Cards"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/AppTextAndFields"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        app:cardBackgroundColor="@color/AppTextAndFields"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_money1"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_card_debit"
+                android:tint="@android:color/black"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/divider1"
+                android:layout_width="1.2dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/icon_money1"
+                android:background="@color/grey_90" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/rubik"
+                android:text="Debit Card Request"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black"
+                tools:ignore="RelativeOverlap" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:tint="@android:color/black"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        app:cardBackgroundColor="@color/AppTextAndFields"
+        app:cardCornerRadius="4dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:background="?attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_money2"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_cardless"
+                android:tint="@android:color/black"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="1.2dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/icon_money2"
+                android:background="@color/grey_90" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/rubik"
+                android:text="Cardless Withdrawal"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@android:color/black" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+                android:tint="@android:color/black"
+                tools:ignore="ContentDescription" />
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</LinearLayout>

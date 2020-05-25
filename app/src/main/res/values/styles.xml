@@ -1,0 +1,30 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+
+    <style name="EditText.Yellow" parent="@style/AppTheme">
+        <item name="colorControlActivated">@color/AppTextAndFields</item>
+        <item name="colorControlHighlight">@color/AppTextAndFields</item>
+        <item name="colorControlNormal">@color/AppTextAndFields</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="TextAppearance.Subhead.Bold" parent="@style/TextAppearance.AppCompat.Subhead">
+
+        <item name="fontFamily">@font/montserrat</item>
+    </style>
+    
+    <style name="navigationTheme">
+        <item name="colorPrimary">@color/appBackground</item>
+        <item name="colorControlHighlight">@color/AppTextAndFields</item>
+    </style>
+
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/appBackground"
+    tools:context=".ui.MyAccountFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/appBackground"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/icon_moneyt"
+                android:layout_width="40dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="start"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="5dp"
+                android:src="@drawable/ic_bill"
+                android:tint="@color/AppTextAndFields"
+                tools:ignore="ContentDescription" />
+
+            <View
+                android:id="@+id/dividert"
+                android:layout_width="1.2dp"
+                android:layout_height="match_parent"
+                android:layout_toEndOf="@+id/icon_moneyt"
+                android:background="@color/AppTextAndFields" />
+
+            <View
+                android:id="@+id/dividert1"
+                android:layout_width="1.2dp"
+                android:layout_height="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="@color/AppTextAndFields" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:layout_toEndOf="@id/dividert"
+                android:fontFamily="@font/rubik"
+                android:text="Bill Payment"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+                android:textColor="@color/AppTextAndFields"
+                android:textStyle="bold"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="10dp"
+        app:cardBackgroundColor="@color/appBackground"
+        app:cardCornerRadius="4dp"
+        app:cardElevation="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/montserrat"
+                android:text="Select Merchant:"
+                android:textColor="@color/AppTextAndFields"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <Spinner
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:spinnerMode="dropdown"
+        android:layout_width="match_parent"
+        android:backgroundTint="@color/AppTextAndFields"
+        style="@style/Base.Widget.AppCompat.Spinner.Underlined"
+        android:layout_height="50dp" />
+
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp">
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="100dp"
+            android:fontFamily="@font/roboto_mono"
+            android:textAllCaps="false"
+            android:text="Submit"
+            android:id="@+id/submitBtn"
+            android:backgroundTint="@color/AppTextAndFields"
+            android:layout_marginStart="30dp"
+            android:layout_gravity="center_vertical"
+            android:layout_height="50dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="100dp"
+            android:fontFamily="@font/roboto_mono"
+            android:textAllCaps="false"
+            android:text="Cancel"
+            android:id="@+id/CancelBtn"
+            android:layout_marginEnd="30dp"
+            android:backgroundTint="@color/AppTextAndFields"
+            android:layout_gravity="center_vertical|end"
+            android:layout_height="50dp"/>
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+</LinearLayout>
